@@ -11,14 +11,9 @@ Electron Chess makes use of the following libraries:
 
 # Screenshots
 
-- Landing Page:
-  ![alt landing screen](screenshots/landing.png)
-
-- Load Previous games from PGN files:
-  ![alt load previous games](screenshots/load-game.png)
-
-Play your own games to follow along with an article or a book:
-![alt start your own games](screenshots/new-game.png)
+![alt landing screen caption="Landing Page"](screenshots/landing.png)
+![alt load previous games caption="Load Previous games from PGN files"](screenshots/load-game.png)
+![alt start your own games caption="Play your own games to follow along with an article or a book"](screenshots/new-game.png)
 
 ### Installation
 
