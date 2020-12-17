@@ -17,7 +17,12 @@ Electron Chess makes use of the following libraries:
             <img alt="Landing screen" src="screenshots/landing.png" width="50%" />
         </td>
         <td>
-            Select to load a game from an existing PGN file, start your own game, save a game that you have started and completed, or close a game. Use command shortcuts to perform these tasks: Cmd/Ctrl+O, Cmd/Ctrl+N, Cmd/Ctrl+S, Cmd/Ctrl+C
+            <ul>
+                <li>Load a game from an existing PGN file (Cmd/Ctrl+O)</li>
+                <li>Start your own game (Cmd/Ctrl+N)</li>
+                <li>Save a game that you have started and completed (Cmd/Ctrl+S)</li>
+                <li>Close a game (Cmd/Ctrl+C)</li>
+            </ul>
         </td>
     </tr>
     <tr>
