@@ -35,6 +35,8 @@ Electron Chess makes use of the following libraries:
                         <li>To Previous Move (Left Arrow)</li>
                         <li>To Next Move (Right Arrow)</li>
                         <li>To End of Game (Shift+Right Arrow)</li>
+                        <li>View annotations in the Comments box</li>
+                        <li>See the entire game move history in algebraic notation</li>
                     </ul>
                 </li>
             </ul>
@@ -51,6 +53,7 @@ Electron Chess makes use of the following libraries:
             <ul>
                 <li>Start your own games to follow along with a game in an article or a book</li>
                 <li>Add comments when you want to note something about the state of the games at that point</li>
+                <li>See the move history in algebraic notation</li>
                 <li>Save the game later once it's complete</li>
             </ul>
         </td>
