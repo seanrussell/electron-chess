@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Chess</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+		
+</head>
+
+<body>
+    <div class="container">
+        <div class="home">
+            <div class="row">
+                <div class="col s12 m5">
+                  <div class="card teal">
+                      <div class="card-content white-text">
+                        <span class="card-title"><h2><i class="fas fa-chess-king"></i> Welcome!</h2></span>
+                        <p>
+                            With Electron Chess, you can load PGN chess games and also start your own games.
+                            <ul class="collection black-text">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">folder_open</i>
+                                    <span class="title"><strong>Open Game</strong></span>
+                                    <p><em>Cmd (or Ctrl) + O</em><br>
+                                        From the Electron menu, select Open Game to navigate to your existing PGN chess game.
+                                    </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle orange">create_new_folder</i>
+                                    <span class="title"><strong>New Game</strong></span>
+                                    <p><em>Cmd (or Ctrl) + N</em><br>
+                                        From the Electron menu, select New Game to begin a new chess game.
+                                    </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle green">save</i>
+                                    <span class="title"><strong>Save Game</strong></span>
+                                    <p><em>Cmd (or Ctrl) + S</em><br>
+                                        From the Electron menu, select Save Game to save a game you started in PGN format.
+                                    </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle red">close</i>
+                                    <span class="title"><strong>Close Game</strong></span>
+                                    <p><em>Cmd (or Ctrl) + C</em><br>
+                                        From the Electron menu, select Close Game to close the game board and return to this screen.
+                                    </p>
+                                </li>
+                            </ul>    
+                        </p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="game-info">
+                <h4 id="event-info"></h4>
+                <ul>
+                    <li><div id="site-info"></div></li>
+                    <li><div id="date-info"></div></li>
+                    <li><div id="result-info"></div></li>
+                </ul>    
+            </div>
+            <div class="board-game">
+                <div id="status"></div>
+                <div id="player-black"></div>
+                <div id="game-board" class="chessboard"></div>
+                <div id="player-white"></div>
+            </div>
+            <ul class="buttons">
+                <li class="col s2">
+                    <a id="first-btn" class="waves-effect waves-light btn" title="Go to beginning"><i class="fas fa-fast-backward"></i></a>
+                </li>
+                <li class="col s2">
+                    <a id="prev-btn" class="waves-effect waves-light btn" title="Go to previous move"><i class="fas fa-step-backward"></i></a>
+                </li>
+                <li class="col s2">
+                    <a id="next-btn" class="waves-effect waves-light btn" title="Go to next move"><i class="fas fa-step-forward"></i></a>
+                </li>
+                <li class="col s2">
+                    <a id="last-btn" class="waves-effect waves-light btn" title="Go to end"><i class="fas fa-fast-forward"></i></a>
+                </li>
+            </ul>
+            <div id="annotations-block">
+                <div class="row">
+                    <div class="col s12 m5">
+                      <div class="card grey darken-1 white-text">
+                        <div class="card-content">
+                            <span class="card-title">Comments</span>
+                            <p>
+                                <textarea rows="4"></textarea>
+                            </p>
+                            <a id="add-comment" class="waves-effect waves-light btn grey" title="Add Comment">Add Comment</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div id="history-block">
+                <div class="row">
+                    <div class="col s12 m5">
+                      <div class="card blue-grey darken-1 white-text">
+                        <div class="card-content">
+                            <span class="card-title">Move History</span>
+                            <p></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="js/events.js"></script>
+
+    <script>if (window.module) module = window.module;</script>
+
+    <script>
+
+    </script>
+</body>
+</html>

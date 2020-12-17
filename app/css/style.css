@@ -1,0 +1,120 @@
+/* fallback */
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v67/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
+		format('woff2');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+
+.container {
+	width: 440px;
+	padding: 20px;
+}
+
+.home ul {
+	margin-top: 25px;
+}
+
+.home .card-title h2 {
+	margin-top: 10px;
+}
+
+.game {
+	display: none;
+}
+
+#site-info .badge:first-child {
+	margin-left: 0;
+}
+
+.chessboard {
+	width: 400px;
+}
+
+#event-info {
+	margin-top: 0;
+}
+
+#status {
+	display: none;
+	margin: 5px auto;
+	text-align: center;
+	min-height: 25px;
+}
+
+#player-black,
+#player-white {
+	margin: 5px auto;
+	text-align: center;
+}
+
+.game-info ul {
+	list-style-type: none;
+}
+
+.game-info li {
+	display: inline-block;
+}
+
+.buttons {
+	margin-top: 20px 0 0 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.buttons li {
+	display: inline-block;
+}
+
+.buttons .btn {
+	width: 75px;
+}
+
+#annotations-block {
+	width: 100%;
+	min-height: 100px;
+	margin-top: 20px;
+	padding: 5px;
+}
+
+#annotations-block .row {
+	margin-bottom: 0;
+}
+
+#annotations-block textarea {
+	color: #fff;
+	border: 1px solid #fefefe;
+	min-height: 75px;
+}
+
+#annotations-block .btn {
+	width: 100%;
+}
+
+#history-block {
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+#history-block .card-content {
+	min-height: 120px;
+}

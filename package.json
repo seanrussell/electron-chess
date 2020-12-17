@@ -1,0 +1,40 @@
+{
+  "name": "electron-chess",
+  "version": "1.0.0",
+  "description": "Electron chess app to view and play games",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanrussell/electron-chess.git"
+  },
+  "main": "main-process/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron .",
+    "buildMain": "node ./scripts/build-main.js",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/win/icon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ElectronChess\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/linux/Icon-512x512.png --prune=false --out=release-builds"
+  },
+  "keywords": [
+    "chess",
+    "electron",
+    "javascript"
+  ],
+  "author": "Sean Russell",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^10.1.2",
+    "electron-packager": "^15.1.0",
+    "electron-reload": "^1.5.0",
+    "nodemon": "^2.0.4",
+    "concurrently": "^4.1.2",
+    "sass": "^1.29.0"
+  },
+  "dependencies": {
+    "chess.js": "^0.11.0",
+    "cm-pgn": "^1.7.1",
+    "electron-log": "^4.2.4",
+    "glob": "^7.1.2",
+    "pgn-parser": "^2.0.0"
+  }
+}
