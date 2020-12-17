@@ -11,6 +11,9 @@ Electron Chess makes use of the following libraries:
 
 # Screenshots
 
+<img alt="Landing screen" src="screenshots/landing.png" />
+<figcaption>Select to load a game from an existing PGN file, start your own game, close a game, or save a game that you have started and completed.</figcaption>
+
 ![alt landing screen caption="Landing Page"](screenshots/landing.png)
 ![alt load previous games caption="Load Previous games from PGN files"](screenshots/load-game.png)
 ![alt start your own games caption="Play your own games to follow along with an article or a book"](screenshots/new-game.png)
