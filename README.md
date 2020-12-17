@@ -98,7 +98,7 @@ Electron Chess makes use of the following libraries:
 
 ### Sample Games
 
-Load sample games from the <em>sample-games</em> folder.
+Load sample games from the <em>sample-games</em> folder. NAG comment notation is currently not supported.
 
 ### Building binaries
 
