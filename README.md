@@ -16,7 +16,7 @@ Electron Chess makes use of the following libraries:
         <td align="center">
             <img alt="Landing screen" src="screenshots/landing.png" width="50%" />
         </td>
-        <td>
+        <td valign="top">
             <ul>
                 <li>Load a game from an existing PGN file (Cmd/Ctrl+O)</li>
                 <li>Start your own game (Cmd/Ctrl+N)</li>
@@ -26,8 +26,18 @@ Electron Chess makes use of the following libraries:
         </td>
     </tr>
     <tr>
-        <td>
-            Step through existing games with the previous/next and to beginning/to end arrows. Use shortcuts to navigate through existing games: Shift+Right Arrow, Shift+Left Arrow, Right Arrow, Left Arrow.
+        <td valign="top">
+            <ul>
+                <li>
+                Step through existing games
+                    <ul>
+                        <li>To Beginning of Game (Shift+Left Arrow)</li>
+                        <li>To Previous Move (Left Arrow)</li>
+                        <li>To Next Move (Right Arrow)</li>
+                        <li>To End of Game (Shift+Right Arrow)</li>
+                    </ul>
+                </li>
+            </ul>
         </td>
         <td align="center">
             <img alt="Load existing games" src="screenshots/load-game.png" width="50%" />
@@ -37,8 +47,12 @@ Electron Chess makes use of the following libraries:
         <td align="center">
             <img alt="Play your own games" src="screenshots/new-game.png" width="50%" />
         </td>
-        <td>
-            Start your own games to follow along with a game in an article or a book. Add comments when you want to note something about the state of the games at that point. Save the game later once it's complete.
+        <td valign="top">
+            <ul>
+                <li>Start your own games to follow along with a game in an article or a book</li>
+                <li>Add comments when you want to note something about the state of the games at that point</li>
+                <li>Save the game later once it's complete</li>
+            </ul>
         </td>
     </tr>
 </table>
