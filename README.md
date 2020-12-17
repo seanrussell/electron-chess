@@ -12,30 +12,37 @@ Electron Chess makes use of the following libraries:
 ### Screenshots
 
 <table border="0">
-<tr>
-<td>
-<figcaption>Select to load a game from an existing PGN file, start your own game, save a game that you have started and completed, or close a game.</figcaption>
-</td>
-<td>
-<img alt="Landing screen" src="screenshots/landing.png" />
-</td>
-</tr>
-<tr>
-<td>
-<figcaption>Step through existing games with the previous/next and to beginning/to end arrows.</figcaption>
-</td>
-<td>
-<img alt="Load existing games" src="screenshots/load-game.png" />
-</td>
-</tr>
-<tr>
-<td>
-<figcaption>Start your own games to follow along with a game in an article or a book</figcaption>
-</td>
-<td>
-<img alt="Play your own games" src="screenshots/new-game.png" />
-</td>
-</tr>
+    <tr>
+        <td>
+            Select to load a game from an existing PGN file, start your own game, save a game that you have started and completed, or close a game.
+
+            Use command shortcuts to perform these tasks: Cmd/Ctrl+O, Cmd/Ctrl+N, Cmd/Ctrl+S, Cmd/Ctrl+C
+        </td>
+        <td>
+            <img alt="Landing screen" src="screenshots/landing.png" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Step through existing games with the previous/next and to beginning/to end arrows.
+
+            Use shortcuts to navigate through existing games: Shift+Right Arrow, Shift+Left Arrow, Right Arrow, Left Arrow.
+        </td>
+        <td>
+            <img alt="Load existing games" src="screenshots/load-game.png" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Start your own games to follow along with a game in an article or a book.
+
+            Add comments when you want to note something about the state of the games at that point.
+        </td>
+        <td>
+            <img alt="Play your own games" src="screenshots/new-game.png" />
+        </td>
+    </tr>
+
 </table>
 
 ### Installation
