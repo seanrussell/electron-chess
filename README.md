@@ -13,7 +13,7 @@ Electron Chess makes use of the following libraries:
 
 <table border="0">
     <tr>
-        <td>
+        <td align="center">
             <img alt="Landing screen" src="screenshots/landing.png" width="50%" />
         </td>
         <td>
@@ -24,12 +24,12 @@ Electron Chess makes use of the following libraries:
         <td>
             Step through existing games with the previous/next and to beginning/to end arrows. Use shortcuts to navigate through existing games: Shift+Right Arrow, Shift+Left Arrow, Right Arrow, Left Arrow.
         </td>
-        <td>
+        <td align="center">
             <img alt="Load existing games" src="screenshots/load-game.png" width="50%" />
         </td>
     </tr>
     <tr>
-        <td>
+        <td align="center">
             <img alt="Play your own games" src="screenshots/new-game.png" width="50%" />
         </td>
         <td>
