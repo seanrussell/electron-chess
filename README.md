@@ -11,4 +11,24 @@ Electron Chess makes use of the following libraries:
 
 # Screenshots
 
-![alt landing](screenshots/landing.png)
+Landing Page:
+![alt landing screen](screenshots/landing.png)
+
+Load Previous games from PGN files:
+![alt load previous games](screenshots/load-game.png)
+
+Play your own games to follow along with an article or a book:
+![alt start your own games](screenshots/new-game.png)
+
+### Installation
+
+`npm install`
+`npm run start`
+
+### Building binaries
+
+In order to build Electron Chess from source, follow the installation instructions above, then use one of the following commands to create binaries:
+
+- `npm run package-mac`
+- `npm run package-win`
+- `npm run package-linux`
