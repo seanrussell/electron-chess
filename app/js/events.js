@@ -191,6 +191,7 @@ ipcRenderer.on('load:game', (e, gameInfo) => {
 
     document.querySelector('.home').style.display = 'none';
     document.querySelector('.game').style.display = 'block';
+    document.querySelector('#result-info').style.display = 'block';
     document.querySelector('.buttons').style.display = 'block';
 
     board = new Chessboard('game-board', cfg);
@@ -226,6 +227,7 @@ ipcRenderer.on('new:game', (e, header) => {
 
     document.querySelector('.home').style.display = 'none';
     document.querySelector('.game').style.display = 'block';
+    document.querySelector('#result-info').style.display = 'none';
     document.querySelector('#status').style.display = 'block';
 
     if (header) {
