@@ -11,14 +11,14 @@ Electron Chess makes use of the following libraries:
 
 ### Screenshots
 
-<figcaption>Select to load a game from an existing PGN file, start your own game, close a game, or save a game that you have started and completed.</figcaption>
+<figcaption>Select to load a game from an existing PGN file, start your own game, save a game that you have started and completed, or close a game.</figcaption>
 <img alt="Landing screen" src="screenshots/landing.png" />
 
 <figcaption>Step through existing games with the previous/next and to beginning/to end arrows.</figcaption>
-<img alt="Load existing games" src="screenshots/load-game.png" />
+<img alt="Load existing games" src="screenshots/load-game.png" border="1" />
 
 <figcaption>Start your own games to follow along with a game in an article or a book</figcaption>
-<img alt="Play your own games" src="screenshots/new-game.png" />
+<img alt="Play your own games" src="screenshots/new-game.png" border="1" />
 
 ### Installation
 
