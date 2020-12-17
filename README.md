@@ -33,7 +33,7 @@ Electron Chess makes use of the following libraries:
             <img alt="Play your own games" src="screenshots/new-game.png" width="50%" />
         </td>
         <td>
-            Start your own games to follow along with a game in an article or a book. Add comments when you want to note something about the state of the games at that point.
+            Start your own games to follow along with a game in an article or a book. Add comments when you want to note something about the state of the games at that point. Save the game later once it's complete.
         </td>
     </tr>
 </table>
