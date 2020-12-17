@@ -14,7 +14,7 @@ Electron Chess makes use of the following libraries:
 <table border="0">
     <tr>
         <td>
-            <img alt="Landing screen" src="screenshots/landing.png" />
+            <img alt="Landing screen" src="screenshots/landing.png" width="50%" />
         </td>
         <td>
             Select to load a game from an existing PGN file, start your own game, save a game that you have started and completed, or close a game. Use command shortcuts to perform these tasks: Cmd/Ctrl+O, Cmd/Ctrl+N, Cmd/Ctrl+S, Cmd/Ctrl+C
@@ -25,12 +25,12 @@ Electron Chess makes use of the following libraries:
             Step through existing games with the previous/next and to beginning/to end arrows. Use shortcuts to navigate through existing games: Shift+Right Arrow, Shift+Left Arrow, Right Arrow, Left Arrow.
         </td>
         <td>
-            <img alt="Load existing games" src="screenshots/load-game.png" />
+            <img alt="Load existing games" src="screenshots/load-game.png" width="50%" />
         </td>
     </tr>
     <tr>
         <td>
-            <img alt="Play your own games" src="screenshots/new-game.png" />
+            <img alt="Play your own games" src="screenshots/new-game.png" width="50%" />
         </td>
         <td>
             Start your own games to follow along with a game in an article or a book. Add comments when you want to note something about the state of the games at that point.
