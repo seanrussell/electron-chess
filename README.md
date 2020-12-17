@@ -18,10 +18,41 @@ Electron Chess makes use of the following libraries:
         </td>
         <td valign="top">
             <ul>
-                <li>Load a game from an existing PGN file (Cmd/Ctrl+O)</li>
-                <li>Start your own game (Cmd/Ctrl+N)</li>
-                <li>Save a game that you have started and completed (Cmd/Ctrl+S)</li>
-                <li>Close a game (Cmd/Ctrl+C)</li>
+                <li>
+                    Load a game from an existing PGN file
+                    <ul>
+                        <li>Menu > Electron > Load Game</li>
+                        <li>Shortcut: <em>Cmd/Ctrl+O</em></li>
+                    </ul>
+                </li>
+                <li>
+                    Start your own game 
+                    <ul>
+                        <li>Menu > Electron > New Game</li>
+                        <li>Shortcut: <em>Cmd/Ctrl+N</em></li>
+                    </ul>
+                </li>
+                <li>
+                    Save a game that you have started and complete
+                    <ul>
+                        <li>Menu > Electron > Save Game</li>
+                        <li>Shortcut: <em>Cmd/Ctrl+S</em></li>
+                    </ul>
+                </li>
+                <li>
+                    Close a game (Cmd/Ctrl+C)
+                    <ul>
+                        <li>Menu > Electron > Close Game</li>
+                        <li>Shortcut: <em>Cmd/Ctrl+C</em></li>
+                    </ul>
+                </li>
+                <li>
+                    Quit the application
+                    <ul>
+                        <li>Menu > File > Close Window</li>
+                        <li>Shortcut: <em>Cmd/Ctrl+W</em></li>
+                    </ul>
+                </li>
             </ul>
         </td>
     </tr>
@@ -35,10 +66,10 @@ Electron Chess makes use of the following libraries:
                         <li>To Previous Move (Left Arrow)</li>
                         <li>To Next Move (Right Arrow)</li>
                         <li>To End of Game (Shift+Right Arrow)</li>
-                        <li>View annotations in the Comments box</li>
-                        <li>See the entire game move history in algebraic notation</li>
                     </ul>
                 </li>
+                <li>View annotations in the Comments box</li>
+                <li>See the entire game move history in algebraic notation</li>
             </ul>
         </td>
         <td align="center">
@@ -64,6 +95,10 @@ Electron Chess makes use of the following libraries:
 
 - `npm install`
 - `npm run start`
+
+### Sample Games
+
+Load sample games from the <em>sample-games</em> folder.
 
 ### Building binaries
 
