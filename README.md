@@ -11,19 +11,19 @@ Electron Chess makes use of the following libraries:
 
 # Screenshots
 
-Landing Page:
-![alt landing screen](screenshots/landing.png)
+- Landing Page:
+  ![alt landing screen](screenshots/landing.png)
 
-Load Previous games from PGN files:
-![alt load previous games](screenshots/load-game.png)
+- Load Previous games from PGN files:
+  ![alt load previous games](screenshots/load-game.png)
 
 Play your own games to follow along with an article or a book:
 ![alt start your own games](screenshots/new-game.png)
 
 ### Installation
 
-`npm install`
-`npm run start`
+- `npm install`
+- `npm run start`
 
 ### Building binaries
 
