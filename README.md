@@ -2,20 +2,21 @@
 
 Welcome to Electron Chess. Review previous games and play your own games as a way to complement your chess study.
 
-# Dependencies
+### Dependencies
 
 Electron Chess makes use of the following libraries:
 
 - Chess.js - <https://github.com/jhlywa/chess.js>
 - Chessboard.js - <https://github.com/oakmac/chessboardjs>
 
-# Screenshots
+### Screenshots
 
-<img alt="Landing screen" src="screenshots/landing.png" />
 <figcaption>Select to load a game from an existing PGN file, start your own game, close a game, or save a game that you have started and completed.</figcaption>
+<img alt="Landing screen" src="screenshots/landing.png" />
 
-![alt landing screen caption="Landing Page"](screenshots/landing.png)
-![alt load previous games caption="Load Previous games from PGN files"](screenshots/load-game.png)
+![alt load previous games](screenshots/load-game.png)
+_Step through existing games with the previous/next and to beginning/to end arrows_
+
 ![alt start your own games caption="Play your own games to follow along with an article or a book"](screenshots/new-game.png)
 
 ### Installation
