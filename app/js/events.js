@@ -126,7 +126,7 @@ const movePrevious = () => {
         board.position(res);
         index -= 1;
         if (index < 0) {
-        index = 0;
+            index = 0;
         }
         let annotations = document.querySelector('#annotations-block textarea');
         annotations.value = '';
@@ -158,6 +158,16 @@ const moveLast = () => {
     if (comments.length > 0 && comments[index - 1] !== null) { 
         annotations.innerHTML = comments[index - 1].comment;
     }
+};
+
+const startOver = () => {
+    board.position('start');
+    ipcRenderer.send('start:over');
+};
+
+const undoMove = () => {
+    let res = ipcRenderer.sendSync('undo:move', index);
+    board.position(res);
 };
 
 /* IPC communication from main process */
@@ -192,7 +202,8 @@ ipcRenderer.on('load:game', (e, gameInfo) => {
     document.querySelector('.home').style.display = 'none';
     document.querySelector('.game').style.display = 'block';
     document.querySelector('#result-info').style.display = 'block';
-    document.querySelector('.buttons').style.display = 'block';
+    document.querySelector('.existing-game').style.display = 'block';
+    document.querySelector('.new-game').style.display = 'none';
 
     board = new Chessboard('game-board', cfg);
 
@@ -237,7 +248,8 @@ ipcRenderer.on('new:game', (e, header) => {
     let statusBlock = document.querySelector('#status');
     statusBlock.innerHTML = 'White to move';
 
-    document.querySelector('.buttons').style.display = 'none';
+    document.querySelector('.existing-game').style.display = 'none';
+    document.querySelector('.new-game').style.display = 'block';
 
     let historyBlock = document.querySelector('#history-block .card-content p');
     historyBlock.innerHTML = '';
@@ -252,18 +264,14 @@ ipcRenderer.on('new:game', (e, header) => {
 
 ipcRenderer.on('close:game', (e) => {
     document.querySelector('.game').style.display = 'none';
-    document.querySelector('.buttons').style.display = 'none';
+    document.querySelector('.existing-game').style.display = 'none';
+    document.querySelector('.new-game').style.display = 'none';
     document.querySelector('.home').style.display = 'block';
 
     ipcRenderer.send('disable:close');
     ipcRenderer.send('disable:save');
 
     board.destroy();
-});
-
-ipcRenderer.on('save:game', (e) => {
-    // Maybe prompt for info like event/site/date/result/black player/white player
-
 });
 
 ipcRenderer.on('save:success', (e) => {
@@ -296,6 +304,18 @@ const lastBtn = document.getElementById('last-btn');
 lastBtn.addEventListener('click', e => {
     e.preventDefault();
     moveLast();
+});
+
+const startOverBtn = document.getElementById('start-over-btn');
+startOverBtn.addEventListener('click', e => {
+    e.preventDefault();
+    startOver();
+});
+
+const undoBtn = document.getElementById('undo-btn');
+undoBtn.addEventListener('click', e => {
+    e.preventDefault();
+    undoMove();
 });
 
 const addCommentBtn = document.getElementById('add-comment');

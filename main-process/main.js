@@ -7,7 +7,7 @@ const { createMenu } = require('./menu.js');
 const { initNewGame } = require('./game-new/new-game.js');
 const { getGameMoveHistory } = require('./game-load/load-game.js');
 
-process.env.NODE_ENV = "production";
+process.env.NODE_ENV = "development";
 
 const isDev = process.env.NODE_ENV !== "production" ? true : false;
 const isMac = process.platform === "darwin" ? true : false;
@@ -175,4 +175,13 @@ ipcMain.on('disable:save', (event) => {
 
 ipcMain.on('get:currpos', (event) => {
     event.returnValue = game.fen();
+});
+
+ipcMain.on('undo:move', (event) => {
+    game.undo();
+    event.returnValue = game.fen();
+});
+
+ipcMain.on('start:over', (event) => {
+    clearBoard();
 });
